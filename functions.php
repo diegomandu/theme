@@ -9,4 +9,15 @@ function custom_curl_resolve( $handle, $r, $url ) {
 		"downloads.wordpress.org:443:66.155.40.203")
 	);
 }
+
+
+// Setup
+
+// Includes 
+
+// Hooks
+
+// Shortcodes
+
+
 ?>
