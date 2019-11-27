@@ -13,4 +13,14 @@ function ju_enqueue(){
     wp_register_style( 'ju_magnific_popup', $uri . '/assets/css/magnific-popup.css' );
     wp_register_style( 'ju_responsive', $uri . '/assets/css/responsive.css' );
     wp_register_style( 'ju_custom', $uri . '/assets/css/custom.css' );
+
+    wp_enqueue_style( 'ju_google_fonts' );
+    wp_enqueue_style( 'ju_bootstrap' );
+    wp_enqueue_style( 'ju_style' );
+    wp_enqueue_style( 'ju_dark' );
+    wp_enqueue_style( 'ju_font_icons' );
+    wp_enqueue_style( 'ju_animate' );
+    wp_enqueue_style( 'ju_magnific_popup' );
+    wp_enqueue_style( 'ju_responsive' );
+    wp_enqueue_style( 'ju_custom' );
 }
