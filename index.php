@@ -1,4 +1,6 @@
 
+  <?php get_header(); ?>
+  
     <!-- Content
     ============================================= -->
     <section id="content">
@@ -227,3 +229,5 @@
       </div>
 
     </section><!-- #content end -->
+
+<?php get_footer(); ?>
