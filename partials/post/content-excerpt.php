@@ -4,7 +4,7 @@
         if( has_post_thumbnail() ){
             ?>
             <div class="entry-image">
-                <a href="#">
+                <a href="<?php the_permalink(); ?>">
                     <?php 
                     
                     the_post_thumbnail( 'full', [
@@ -20,19 +20,17 @@
    
     <div class="entry-title">
         <h2>
-            <a href="single.html">
+            <a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?>
             </a>
         </h2>
     </div>
     <ul class="entry-meta clearfix">
-        <li>
-            <i class="icon-calendar3"></i> 10th February 2014
-        </li>
+        <li><i class="icon-calendar3"></i> <?php echo get_the_date(); ?> </li>
         <li>
             <a href="#">
                 <i class="icon-user"></i>
-                admin
+                <?php the_author(); ?>
             </a>
         </li>
         <li>
@@ -54,7 +52,7 @@
             rem voluptatibus officia eos rerum deleniti quae nihil facilis repellat
             atque vitae voluptatem libero at eveniet veritatis ab facere.
         </p>
-        <a href="#" class="more-link">Read More</a>
+        <a href="<?php the_permalink(); ?>" class="more-link">Read More</a>
     </div>
 </div>
                 
