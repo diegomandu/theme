@@ -28,7 +28,7 @@
     <ul class="entry-meta clearfix">
         <li><i class="icon-calendar3"></i> <?php echo get_the_date(); ?> </li>
         <li>
-            <a href="#">
+            <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )  ); ?>">
                 <i class="icon-user"></i>
                 <?php the_author(); ?>
             </a>
