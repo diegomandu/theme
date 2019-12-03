@@ -1,13 +1,27 @@
 <div class="entry clearfix">
-    <div class="entry-image">
-        <a href="#">
-            <?php the_post_thumbnail( 'full', [ 'class' => 'image_fade' ] ); ?>
-        </a>
-    </div>
+    <?php
+    
+        if( has_post_thumbnail() ){
+            ?>
+            <div class="entry-image">
+                <a href="#">
+                    <?php 
+                    
+                    the_post_thumbnail( 'full', [
+                         'class' => 'image_fade' 
+                    ] );     
+                    ?>
+                </a>
+            </div>
+            <?php
+        }
+    
+    ?>
+   
     <div class="entry-title">
         <h2>
             <a href="single.html">
-            This is a Standard post with a Preview Image
+                <?php the_title(); ?>
             </a>
         </h2>
     </div>
