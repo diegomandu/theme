@@ -3,10 +3,10 @@
     
         if( has_post_thumbnail() ){
             ?>
+
             <div class="entry-image">
                 <a href="<?php the_permalink(); ?>">
                     <?php 
-                    
                     the_post_thumbnail( 'full', [
                          'class' => 'image_fade' 
                     ] );     
@@ -35,12 +35,12 @@
         </li>
         <li>
             <i class="icon-folder-open"></i>
-            <a href="#">General</a>, <a href="#">Media</a>
+            <?php the_category( ' ' ); ?>
         </li>
         <li>
             <a href="#">
-            <i class="icon-comments"></i>
-            13 Comments
+                <i class="icon-comments"></i>
+                <?php comments_number(); ?>
             </a>
         </li>
     </ul>
