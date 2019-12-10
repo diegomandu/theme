@@ -40,18 +40,12 @@
         <li>
             <a href="#">
                 <i class="icon-comments"></i>
-                <?php comments_number(); ?>
+                <?php comments_number( '0' ); ?>
             </a>
         </li>
     </ul>
     <div class="entry-content">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate,
-            asperiores quod est tenetur in. Eligendi, deserunt, blanditiis est
-            quisquam doloribus voluptate id aperiam ea ipsum magni aut perspiciatis
-            rem voluptatibus officia eos rerum deleniti quae nihil facilis repellat
-            atque vitae voluptatem libero at eveniet veritatis ab facere.
-        </p>
+        <?php the_excerpt(); ?>
         <a href="<?php the_permalink(); ?>" class="more-link">Read More</a>
     </div>
 </div>
