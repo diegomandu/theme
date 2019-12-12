@@ -57,7 +57,25 @@
                 <!-- Entry Image
                   ============================================= -->
                   <div class="entry-image">
-                    <a href="#"><img src="images/blog/full/1.jpg"></a>
+                    <?php 
+
+                    if( has_post_thumbnail() ){
+                      ?>
+                      <div class="entry-image">
+                        <a href="<?php the_permalink(); ?>">
+                          <?php 
+                          the_post_thumbnail( 'full', [
+                            'class' =>  'image_fade'
+                          ]);
+                          ?>
+                        </a>
+                      </div>
+                      <?php
+                    }
+
+                    ?>
+                    
+                    
                   </div><!-- .entry-image end -->
 
                 <!-- Entry Content
