@@ -159,43 +159,31 @@
 				'fields'				=>	[
 					'author'			=>	
 						'<div class="col_one_third">
-							<label' . __( 'Name', 'udemy' ) . '</label>
+							<label>' . __( 'Name', 'udemy' ) . '</label>
 							<input type="text" name="author" class="sm-form-control" />
 						</div>',
 					'email'				=>	
 						'<div class="col_one_third">
-							<label' . __( 'Email', 'udemy' ) . '</label>
+							<label>' . __( 'Email', 'udemy' ) . '</label>
 							<input type="text" name="email" class="sm-form-control" />
 						</div>',
 					'url'				=>	
 						'<div class="col_one_third col_last">
-							<label' . __( 'Website', 'udemy' ) . '</label>
+							<label>' . __( 'Website', 'udemy' ) . '</label>
 							<input type="text" name="url" class="sm-form-control" />
 						</div>'
 
-				]
+				],
+				'class_submit'			=>	'button button-3d nomargin',
+				'label_submit'			=>	__( 'Submit Comment', 'udemy' ),
+				'title_reply'			=>	__('Leave a <span>Comment</span>', 'udemy')
 			]);
 
 		 ?>
 
 		<h3>Leave a <span>Comment</span></h3>
 
-		<form class="clearfix" action="#" method="post" id="commentform">
-
-			
-
-			
-
-			
-
-			
-
-			<div class="col_full nobottommargin">
-				<button type="submit" id="submit-button" class="button button-3d nomargin">Submit Comment</button>
-			</div>
-
-		</form>
-
+		
 	</div><!-- #respond end -->
 
 </div><!-- #comments end -->
