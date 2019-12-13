@@ -146,31 +146,49 @@
 	============================================= -->
 	<div id="respond" class="clearfix">
 
-		<h3>Leave a <span>Comment</span></h3>
 
-		<form class="clearfix" action="#" method="post" id="commentform">
+		<?php 
 
-			<div class="col_one_third">
-				<label>Name</label>
-				<input type="text" name="author" class="sm-form-control" />
-			</div>
-
-			<div class="col_one_third">
-				<label>Email</label>
-				<input type="text" name="email" class="sm-form-control" />
-			</div>
-
-			<div class="col_one_third col_last">
-				<label>Website</label>
-				<input type="text" name="url" class="sm-form-control" />
-			</div>
-
-			<div class="clear"></div>
+			comment_form([
+				'comment_field'			=>	'<div class="clear"></div>
 
 			<div class="col_full">
 				<label>Comment</label>
 				<textarea name="comment" cols="58" rows="7" class="sm-form-control"></textarea>
-			</div>
+			</div>',
+				'fields'				=>	[
+					'author'			=>	
+						'<div class="col_one_third">
+							<label' . __( 'Name', 'udemy' ) . '</label>
+							<input type="text" name="author" class="sm-form-control" />
+						</div>',
+					'email'				=>	
+						'<div class="col_one_third">
+							<label' . __( 'Email', 'udemy' ) . '</label>
+							<input type="text" name="email" class="sm-form-control" />
+						</div>',
+					'url'				=>	
+						'<div class="col_one_third col_last">
+							<label' . __( 'Website', 'udemy' ) . '</label>
+							<input type="text" name="url" class="sm-form-control" />
+						</div>'
+
+				]
+			]);
+
+		 ?>
+
+		<h3>Leave a <span>Comment</span></h3>
+
+		<form class="clearfix" action="#" method="post" id="commentform">
+
+			
+
+			
+
+			
+
+			
 
 			<div class="col_full nobottommargin">
 				<button type="submit" id="submit-button" class="button button-3d nomargin">Submit Comment</button>
