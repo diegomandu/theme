@@ -131,7 +131,7 @@
                   <div class="card-header">
                     <strong>
                       Posted by
-                      <a href="#">John Doe</a>
+                      <a href="<?php echo $author_URL; ?>"><?php the_author(); ?></a>
                     </strong>
                   </div>
                   <div class="card-body">
