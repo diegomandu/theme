@@ -48,6 +48,7 @@
                   <div class="entry-content notopmargin">
 
                     <a href="<?php echo $post->guid; ?>">Direct Download</a>
+                    <img src="<?php echo $post->guid; ?>" class="img-responsive"> 
                     <?php 
                     the_content();
 
