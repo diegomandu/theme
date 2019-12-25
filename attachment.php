@@ -47,7 +47,11 @@
                   ============================================= -->
                   <div class="entry-content notopmargin">
 
-                    <?php the_content();?>
+                    <a href="<?php echo $post->guid; ?>">Direct Download</a>
+                    <?php 
+                    the_content();
+
+                    ?>
 
                   <!-- Post Single - Content End -->
 
