@@ -1,38 +1,38 @@
 <?php get_header(); ?>
   
+
+<!-- Page Title
+============================================= -->
+<section id="page-title">
+  <div class="container clearfix">
+    <h1>Search Results for: Term</h1>
+  </div>
+</section><!-- #page-title end -->
+
     <!-- Content
     ============================================= -->
     <section id="content">
 
       <div class="content-wrap">
 
-        <div class="section header-stick bottommargin-lg clearfix" style="padding: 20px 0;">
-          <div>
-            <div class="container clearfix">
-              <span class="badge badge-danger bnews-title">Breaking News:</span>
 
-              <div class="fslider bnews-slider nobottommargin" data-speed="800" data-pause="6000" data-arrows="false"
-                data-pagi="false">
-                <div class="flexslider">
-                  <div class="slider-wrap">
-                    <div class="slide"><a href="#"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </strong></a></div>
-                    <div class="slide"><a href="#"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </strong></a></div>
-                    <div class="slide"><a href="#"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </strong></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div class="container clearfix">
 
           <!-- Post Content
           ============================================= -->
           <div class="postcontent nobottommargin clearfix">
+
+            <!-- Search Box
+            ============================================= -->
+            <div class="col_full card">
+              <div class="card-header"><?php _e( 'What are you searhing for today?', 'udemy' ); ?></div>
+              <div class="card-body">
+                <?php get_search_form(); ?>
+              </div>
+            </div>
+            <!-- Search Box End -->
+
 
             <!-- Posts
             ============================================= -->
