@@ -1,7 +1,7 @@
 <?php 
 
 function ju_customize_register( $wp_customize ){
-	$wp_customize->add_settings( 'ju_facebook_handle',[
+	$wp_customize->add_setting( 'ju_facebook_handle',[
 		'default'	=>	''
 	]);
 
@@ -16,8 +16,7 @@ function ju_customize_register( $wp_customize ){
 		array(
 			'label'			=>	__( 'Facebook Handle', 'udemy' ),
 			'section'		=>	'ju_social_section',
-			'settings'		=>	'ju_facebook_handle',
-			'type'			=>	'text'
+			'settings'		=>	'ju_facebook_handle'
 		)
 	));
 
