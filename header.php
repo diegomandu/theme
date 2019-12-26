@@ -88,7 +88,18 @@
         <!-- Logo
         ============================================= -->
         <div id="logo">
-          <a href="#" class="standard-logo">Udemy</a>
+          <?php 
+
+          if( has_custom_logo() ){
+              the_custom_logo();
+          }else{
+            ?>
+              <a href="<?php echo home_url( '/' ); ?>" class="standard-logo"><?php bloginfo( 'name' ); ?></a>
+            <?php
+          }
+
+          ?>
+          
         </div><!-- #logo end -->
 
         <div class="top-advert">
