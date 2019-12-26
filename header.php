@@ -11,9 +11,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Document Title
-	============================================= -->
-  <title>Index Template</title>
 
 </head>
 
