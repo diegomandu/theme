@@ -2,12 +2,12 @@
 
 function ju_social_customizer_section( $wp_customize ){
 	$wp_customize->add_setting( 'ju_facebook_handle',[
-		'default'	=>	''
+		'default'			=>	''
 	]);
 
 	$wp_customize->add_section( 'ju_social_section', [
-		'title'		=>	__( 'Udemy Social Settings', 'udemy' ),
-		'priority'	=>	30
+		'title'				=>	__( 'Udemy Social Settings', 'udemy' ),
+		'priority'			=>	30
 	]);
 
 	$wp_customize->add_control(new WP_Customize_Control(
@@ -19,5 +19,62 @@ function ju_social_customizer_section( $wp_customize ){
 			'settings'		=>	'ju_facebook_handle'
 		)
 	));
+
+	$wp_customize->add_setting( 'ju_twitter_handle' ,[
+		'default'			=> ''
+	]);
+
+	$wp_customize->add_control( new WP_Customize_control(
+		$wp_customize,
+		'ju_social_twitter_input',
+		array(
+			'label'			=>	__( 'Twitter Handle', 'udemy' ),
+			'section'		=>	'ju_social_section',
+			'settings'		=>	'ju_twitter_handle'
+		)
+	));
+
+	$wp_customize->add_setting( 'ju_instagram_handle' ,[
+		'default'			=> ''
+	]);
+
+	$wp_customize->add_control( new WP_Customize_control(
+		$wp_customize,
+		'ju_social_instagram_input',
+		array(
+			'label'			=>	__( 'Instagram Handle', 'udemy' ),
+			'section'		=>	'ju_social_section',
+			'settings'		=>	'ju_instagram_handle'
+		)
+	));
+
+	$wp_customize->add_setting( 'ju_phone_handle' ,[
+		'default'			=> ''
+	]);
+
+	$wp_customize->add_control( new WP_Customize_control(
+		$wp_customize,
+		'ju_social_phone_input',
+		array(
+			'label'			=>	__( 'Phone Handle', 'udemy' ),
+			'section'		=>	'ju_social_section',
+			'settings'		=>	'ju_phone_handle'
+		)
+	));
+
+		$wp_customize->add_setting( 'ju_email_handle' ,[
+		'default'			=> ''
+	]);
+
+	$wp_customize->add_control( new WP_Customize_control(
+		$wp_customize,
+		'ju_social_email_input',
+		array(
+			'label'			=>	__( 'Email Handle', 'udemy' ),
+			'section'		=>	'ju_social_section',
+			'settings'		=>	'ju_email_handle'
+		)
+	));
+
 
 }
