@@ -30,11 +30,19 @@
           <!-- Top Links
           ============================================= -->
           <div class="top-links">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
+            <?php
+            
+            if( has_nav_menu( 'secondary' ) ){
+                wp_nav_menu([
+                    'theme_location'        =>  'secondary',
+                    'container'             =>  false,
+                    'fallback_cb'           =>  false,
+                    'depth'                 =>  2,
+                   // 'walker'                =>  new JU_Custom_Nav_Walker()
+                ]);
+            }
+
+            ?>
           </div><!-- .top-links end -->
 
         </div>
