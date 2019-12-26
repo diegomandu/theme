@@ -1,5 +1,11 @@
+<?php 
+/*
+* Template Name: Full WIdth Page
+*/
 
-<?php get_header(); ?>
+
+
+get_header(); ?>
 <!-- Page Title
   ============================================= -->
   <section id="page-title">
@@ -26,9 +32,7 @@
      
       <div class="container clearfix">
 
-      <!-- Post Content
-        ============================================= -->
-        <div class="postcontent nobottommargin clearfix">
+
 
           <?php 
 
@@ -112,12 +116,6 @@
             }  
             
             ?>
-
-
-          </div><!-- .postcontent end -->
-
-          <?php get_sidebar(); ?>
-
         </div>
 
       </div>
