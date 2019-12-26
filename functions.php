@@ -13,6 +13,7 @@ include( get_theme_file_path( '/includes/widgets.php' ) );
 add_action( 'wp_enqueue_scripts', 'ju_enqueue' );
 add_action( 'after_setup_theme', 'ju_setup_theme' );
 add_action( 'widgets_init', 'ju_widgets' );
+add_action( 'customizer_register', 'ju_customize_register' );
 
 
 // Shortcodes
