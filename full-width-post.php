@@ -1,5 +1,13 @@
 
-<?php get_header(); ?>
+<?php 
+/*
+* Template Name: Full Width Post
+* Template Post Type: Post
+*/
+
+
+
+get_header(); ?>
   
     <!-- Content
     ============================================= -->
@@ -10,9 +18,7 @@
        
         <div class="container clearfix">
 
-          <!-- Post Content
-          ============================================= -->
-          <div class="postcontent nobottommargin clearfix">
+
 
             <?php 
 
@@ -222,10 +228,6 @@
           }
             ?>
 
-
-          </div><!-- .postcontent end -->
-
-          <?php get_sidebar(); ?>
 
         </div>
 
