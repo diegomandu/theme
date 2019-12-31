@@ -25,4 +25,22 @@ function ju_misc_customizer_section( $wp_customize ){
 		'title'			=>	__( 'Udemy Misc Settings', 'udemy' ),
 		'priority'		=>	30
 	]);
+
+	$wp_customize->add_control( new WP_Customize_Control(
+		$wp_customize,
+		'ju_header_show_search_input',
+		array(
+			'label'		=>	__( 'Show Search Button in Header', 'udemy' ),
+			'section'	=>	'ju_misc_section',
+			'settings'	=>	'ju_header_show_search',
+			'type'		=>	'checkbox',
+			'choices'	=>	[
+				'yes'	=>	'Yes'
+			]
+
+
+		)
+
+
+	));
 }
