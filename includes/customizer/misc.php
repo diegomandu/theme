@@ -23,6 +23,14 @@ function ju_misc_customizer_section( $wp_customize ){
 		'default'		=>	0,
 	));
 
+	$wp_customize->add_setting( 'ju_report_file', array(
+		'default'		=>	''
+	));
+
+	$wp_customize->add_settings( 'ju_read_more_color', [
+		'default'		=>	'#1ABC9C'
+	]);
+
 	$wp_customize->add_section( 'ju_misc_section', [
 		'title'			=>	__( 'Udemy Misc Settings', 'udemy' ),
 		'priority'		=>	30,
