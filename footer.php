@@ -13,6 +13,12 @@
             <div class="copyright-links">
               <?php 
 
+                if( get_theme_mod( 'ju_report_file' ); ){
+                    ?>
+                    <a href="<?php echo get_theme_mod( 'ju_report_file' ); ?>">Download Report</a>
+                    <?php
+                }  
+
                 if( get_theme_mod( 'ju_footer_tos_page' ) ){
                   ?>
                   <a href="<?php the_permalink( get_theme_mod( 'ju_footer_tos_page' ) ); ?>">Terms of Use</a>
@@ -28,6 +34,8 @@
               ?>
           
             </div>
+
+
           </div>
 
           <div class="col_half col_last tright">
