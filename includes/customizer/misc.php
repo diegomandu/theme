@@ -40,7 +40,34 @@ function ju_misc_customizer_section( $wp_customize ){
 
 
 		)
+	));
 
+	$wp_customize->add_control( new WP_Customize_Control(
+		$wp_customize,
+		'ju_header_show_cart_input',
+		array(
+			'label'		=>	__( 'Show Cart Button in the Header', 'Udemy' ),
+			'section'	=>	'ju_misc_section',
+			'settings'	=>	'ju_header_show_cart',
+			'type'		=>	'checkbox',
+			'choices'	=>	[
+				'yes'	=>	'Yes'
+			]
+		)
 
 	));
+
+	$wp_customize->add_control( new WP_Customize_Control(
+		$wp_customize,
+		'ju_footer_copyright_text_input',
+		array(
+			'label'		=>	__( 'Copyright text at the footer', 'Udemy' ),
+			'section'	=>	'ju_misc_section',
+			'settings'	=>	'ju_footer_copyright_text',
+			'type'		=>	'text'
+		)
+
+	));
+
+
 }
