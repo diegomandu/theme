@@ -27,7 +27,7 @@ function ju_misc_customizer_section( $wp_customize ){
 		'default'		=>	''
 	));
 
-	$wp_customize->add_settings( 'ju_read_more_color', [
+	$wp_customize->add_setting( 'ju_read_more_color', [
 		'default'		=>	'#1ABC9C'
 	]);
 
