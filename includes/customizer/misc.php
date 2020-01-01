@@ -37,6 +37,16 @@ function ju_misc_customizer_section( $wp_customize ){
 		'panel'			=>	'udemy'
 	]);
 
+	$wp_customize->add_section( 'ju_show_header_popular_posts', [
+		'default'		=>	false
+	]);
+
+	$wp_customize->add_section( 'ju_popular_posts_widget_title', [
+		'default'		=>	'Breaking News'
+	]);
+
+
+
 	$wp_customize->add_control( new WP_Customize_Control(
 		$wp_customize,
 		'ju_header_show_search_input',
