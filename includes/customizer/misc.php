@@ -131,6 +131,32 @@ function ju_misc_customizer_section( $wp_customize ){
 	        'section'    => 'ju_misc_section',
 	        'settings'   => 'ju_report_file',
 	    ) ) 
-	);	
+	);
+
+	$wp_customize->add_control( 
+	    new WP_Customize_Upload_Control( 
+	    $wp_customize, 
+	    'ju_show_header_popular_posts_widget_input', 
+	    array(
+	        'label'      => __( 'Show Header Popular Posts', 'udemy' ),
+	        'section'    => 'ju_misc_section',
+	        'settings'   => 'ju_show_header_popular_posts',
+	        'type'		 =>	'checkbox',
+	        'choises'	 =>	[
+	        	'yes'	 =>	__( 'Yes', 'udemy' )
+	        ]
+	    ) ) 
+	);
+
+	$wp_customize->add_control( 
+	    new WP_Customize_Upload_Control( 
+	    $wp_customize, 
+	    'ju_popular_posts_widget_title_input', 
+	    array(
+	        'label'      => __( 'Popular Posts Widget Title', 'udemy' ),
+	        'section'    => 'ju_misc_section',
+	        'settings'   => 'ju_popular_posts_widget_title'
+	    ) ) 
+	);		
 
 }
