@@ -13,7 +13,7 @@
             <div class="copyright-links">
               <?php 
 
-                if( get_theme_mod( 'ju_report_file' ); ){
+                if( get_theme_mod( 'ju_report_file' ) ){
                     ?>
                     <a href="<?php echo get_theme_mod( 'ju_report_file' ); ?>">Download Report</a>
                     <?php
