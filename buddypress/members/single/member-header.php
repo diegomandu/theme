@@ -7,6 +7,8 @@
  */
 ?>
 
+<div class="container">
+
 <div id="item-header-avatar">
 	<a href="<?php bp_displayed_user_link(); ?>">
 
@@ -33,3 +35,4 @@
 
 	<?php bp_nouveau_member_header_buttons( array( 'container_classes' => array( 'member-header-actions' ) ) ); ?>
 </div><!-- #item-header-content -->
+</div>
