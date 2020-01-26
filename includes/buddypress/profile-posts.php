@@ -7,3 +7,7 @@ function ju_recent_recipes_tabs(){
 		apply_filters( 'bp_core_template_plugin', 'members/single/plugins' )
 	);
 }
+
+function ju_buddypress_recent_posts_title(){
+	?><div class="text-center">My Recipes</div><?php
+}
