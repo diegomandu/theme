@@ -1,6 +1,9 @@
 <?php 
 
 function ju_buddypress_profile_tabs(){
+	if( !ju_plugin_activated_check( 'recipe/index.php' ) ){
+		return;
+	}
 
 	global $bp;
 
