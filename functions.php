@@ -26,6 +26,7 @@ add_action( 'customize_preview_init', 'ju_customize_preview_init' );
 add_action( 'bp_setup_nav', 'ju_buddypress_profile_tabs' );
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+add_filter( 'excerpt_more', '__return_false' );
 
 // Shortcodes
 
