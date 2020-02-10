@@ -21,4 +21,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div id="primary" class="content-area content-wrap">
-	<main id="main" class="site-main container" role="main">';
+	<main id="main" class="site-main container" role="main">
