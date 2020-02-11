@@ -32,6 +32,7 @@ add_action( 'show_user_profile', 'ju_custom_user_profile_fields' );
 add_action( 'edit_user_profile', 'ju_custom_user_profile_fields' );
 add_action( 'personal_options_update', 'ju_save_extra_profile_fields' );
 add_action( 'edit_user_profile_update', 'ju_save_extra_profile_fields' );
+add_action( 'avatar_defaults', 'ju_new_avatar' );
 
 // Shortcodes
 
