@@ -28,7 +28,7 @@ remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 add_filter( 'excerpt_more', '__return_false' );
 add_action( 'show_user_profile', 'ju_custom_user_profile_fields' );
-
+add_action( 'edit_user_profile', 'ju_custom_user_profile_fields' );
 
 // Shortcodes
 
