@@ -30,6 +30,8 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 3
 add_filter( 'excerpt_more', '__return_false' );
 add_action( 'show_user_profile', 'ju_custom_user_profile_fields' );
 add_action( 'edit_user_profile', 'ju_custom_user_profile_fields' );
+add_action( 'personal_options_update', 'ju_save_extra_profile_fields' );
+add_action( 'edit_user_profile_update', 'ju_save_extra_profile_fields' );
 
 // Shortcodes
 
