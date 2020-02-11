@@ -1,6 +1,6 @@
 <?php 
 
-function ju_custom_user_profile_fields(){
+function ju_custom_user_profile_fields( $user ){
 	?>
 	<table class="form-table">
 		<tr>
@@ -13,4 +13,14 @@ function ju_custom_user_profile_fields(){
 			</td>
 		</tr>
 	</table>
+	<?php
+}
+
+function ju_save_extra_profile_fields( $user_id ){
+	if( !current_user_can( 'edit_user' ); ){
+		return false;
+	}
+
+	update_user_meta( $user_id, 'ju_twitter', $_POST['ju_twitter'] );
+	
 }
