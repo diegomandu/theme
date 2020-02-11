@@ -16,6 +16,7 @@ include( get_theme_file_path( '/includes/customizer/enqueue.php' ) );
 include( get_theme_file_path( '/includes/buddypress/profile-tabs.php' ) );
 include( get_theme_file_path( '/includes/utility.php' ) );
 include( get_theme_file_path( '/includes/buddypress/profile-posts.php' ) );
+include( get_theme_file_path( '/includes/admin/author-fields.php' ) );
 
 // Hooks
 add_action( 'wp_enqueue_scripts', 'ju_enqueue' );
