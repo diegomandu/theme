@@ -9,7 +9,7 @@ function ju_custom_user_profile_fields( $user ){
 			</th>
 			<td>
 				<input type="text" name="ju_twitter" id="ju_twitter" class="regular-text"
-						value="<?php echo esc_attr( get_the_author_meta( 'ju_twitter', $user->ID ); ) ?>"/>
+						value="<?php echo esc_attr( get_the_author_meta( 'ju_twitter', $user->ID )); ?>"/>
 			</td>
 		</tr>
 	</table>
@@ -17,7 +17,7 @@ function ju_custom_user_profile_fields( $user ){
 }
 
 function ju_save_extra_profile_fields( $user_id ){
-	if( !current_user_can( 'edit_user' ); ){
+	if( !current_user_can( 'edit_user' ) ){
 		return false;
 	}
 
